@@ -3,6 +3,8 @@ A handfull of usefull functions for the course TTK4130 - Modelling and Simulatio
 
 ## Rotation matricies
 
+## Scew-symmetric matrix of a vector
+
 ## Lagrangian equtions of motion
 
 ## Stability function for numeric solver from butcher tableau
