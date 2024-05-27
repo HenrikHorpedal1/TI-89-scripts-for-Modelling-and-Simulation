@@ -5,6 +5,8 @@ A handfull of usefull functions for the course TTK4130 - Modelling and Simulatio
 
 ## Lagrangian equtions of motion
 
+## Stability function for numeric solver from butcher tableau
+
 ## Butcher tableau from Collocation points, Gauss-Legendre
 
 ## TODO: Newton-Euler equations of motion
