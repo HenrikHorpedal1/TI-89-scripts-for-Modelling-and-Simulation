@@ -45,5 +45,11 @@ $$
 ## Stability function for numeric solver from butcher tableau
 
 ## Butcher tableau from Collocation points, Gauss-Legendre
+`colloc(tau_lst)`
+Input: list of collocation points,
+{ $\tau_1$, $\tau_2$, $\tau_3$...}
+
+Calculates a, b and c of corresponding butcher tableau and displays them.
+Note: matricies are often too wide for I/O screen, and are therefore saved to storrage under varibale names `a_col`, `b_col` and `c_col`. They can then be easily displayed on the home screen. 
 
 ## TODO: Newton-Euler equations of motion
