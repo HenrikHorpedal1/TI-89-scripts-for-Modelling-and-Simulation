@@ -38,9 +38,28 @@ $$
 $$
 
 
-## Scew-symmetric matrix of a vector
+## Skew-symmetric matrix of a vector
+`skews(invec)`
+Only works for 3-element column-vectors.
+If invec is `[a;b;c]`, `skews(invec)` would return:
 
-## Lagrangian equtions of motion
+$$
+\begin{pmatrix}
+0 & -c & b \\
+c & 0 & -a \\
+-b & a & 0
+\end{pmatrix}
+$$
+
+## Lagrangian equations of motion
+after calling `lagfunc()`: 
+- You are asked to enter number of generalized coordinates, for instance 2.
+- You are asked to enter T. use g1, g2, g1dot, g2dot, g3....etc as you generalized coordinates and their derivative
+- You are asked to ender V. same procedure.
+
+- The lagrange equation of motion will be displayed on the I/O screen, but because of limited space the equations will be saved as lagr_lst in memory for better viewing on the home screen.
+
+Note: If your T or V equations start with a minus sign you have to use `(-)` istead of `-` on "the first minus"
 
 ## Stability function for numeric solver from butcher tableau
 
