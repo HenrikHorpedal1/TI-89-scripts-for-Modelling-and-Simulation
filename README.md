@@ -62,6 +62,7 @@ after calling `lagfunc()`:
 Note: If your T or V equations start with a minus sign you have to use `(-)` istead of `-` on "the first minus"
 
 ## Stability function for numeric solver from butcher tableau
+`stabil(a,b,n)` returns the stability function for a given a-matrix, b-vector and dimension n from a butcher tableau. b has to be a column vector.
 
 ## Butcher tableau from Collocation points, Gauss-Legendre
 `colloc(tau_lst)`
