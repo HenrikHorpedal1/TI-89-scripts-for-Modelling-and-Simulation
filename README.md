@@ -51,6 +51,10 @@ c & 0 & -a \\
 \end{pmatrix}
 $$
 
+## Angle Axis Parameterization
+`Angl_Ax(angle,vec)`
+Returns Transformation matrix.
+
 ## Lagrangian equations of motion
 after calling `lagfunc()`: 
 - You are asked to enter number of generalized coordinates, for instance 2.
