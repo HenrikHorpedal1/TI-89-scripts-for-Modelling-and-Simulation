@@ -51,9 +51,11 @@ c & 0 & -a \\
 \end{pmatrix}
 $$
 
-## Angle Axis Parameterization
+## TODO: Angle Axis Parameterization
 `Angl_Ax(angle,vec)`
 Returns Transformation matrix.
+
+## TODO: Parallel Axis theorem
 
 ## Lagrangian equations of motion
 after calling `lagfunc()`: 
