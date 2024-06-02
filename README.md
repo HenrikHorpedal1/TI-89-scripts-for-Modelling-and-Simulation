@@ -57,6 +57,8 @@ Returns Transformation matrix.
 
 ## TODO: Parallel Axis theorem
 
+## TODO: state space formulation of Lagrange equations of motion.
+
 ## Lagrangian equations of motion
 after calling `lagfunc()`: 
 - You are asked to enter number of generalized coordinates, for instance 2.
