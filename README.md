@@ -77,6 +77,7 @@ After calling `genforce()`:
   - Attack point, i.e. the position of the force, often a function of gen. coords. (g1,g2..). Must be entered as a matrix, for instance
     `[[g1][l*sin(g2)][4]]`.
   - The force vector, as row vector for instance: `[-Fd,0,0]`
+- A matrix containing the gen. forces are stored in memory as `genf_mat`, where each row-sum is assoiated with each gen. coord.
 
 Note: If some of you vector or matrix elements start with a minus sign you have to use `(-)` istead of `-` on "the first minus".
 
