@@ -78,7 +78,8 @@ After calling `genforce()`:
     `[[g1][l*sin(g2)][4]]`.
   - The force vector, as row vector for instance: `[-Fd,0,0]`
 
-Note: If some of you vector or matrix elements start with a minus sign you have to use `(-)` istead of `-` on "the first minus"
+Note: If some of you vector or matrix elements start with a minus sign you have to use `(-)` istead of `-` on "the first minus".
+
 Note: Doesnt work for torques, but they are often a generalized force out-of-the-box anyways.
 
 ## Stability function for numeric solver from butcher tableau
