@@ -74,9 +74,9 @@ After calling `genforce()`:
 - You are asked to enter number of generalized coordinates, for instance 2.
 - You are asked to enter number of external forces, for instance 2.
 - For every force you are asked to enter:
-  - Attack point, i.e. the position of the force, often a function of gen. coords. (g1,g2..). Must be entered as a matrix, for instance
+  - Attack point, i.e. the position of the force, often a function of gen. coords. (g1,g2..). X,Y,Z coords must be entered as a matrix, for instance
     `[[g1][l*sin(g2)][4]]`.
-  - The force vector, as row vector for instance: `[-Fd,0,0]`
+  - The force vector, as row vector for instance: `[-Fd,0,0]` where each element corespond in X,Y,Z direction.
 - A matrix containing the gen. forces are stored in memory as `genf_mat`, where each row-sum is assoiated with each gen. coord.
 
 Note: If some of you vector or matrix elements start with a minus sign you have to use `(-)` istead of `-` on "the first minus".
