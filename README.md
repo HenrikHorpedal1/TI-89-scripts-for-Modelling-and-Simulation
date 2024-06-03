@@ -41,7 +41,7 @@ $$
 ## Skew-symmetric matrix of a vector
 `skews(invec)`
 Only works for 3-element column-vectors.
-If invec is `[a;b;c]`, `skews(invec)` would return:
+If invec is `[[a][b][c]]`, `skews(invec)` would return:
 
 $$
 \begin{pmatrix}
@@ -50,6 +50,11 @@ c & 0 & -a \\
 -b & a & 0
 \end{pmatrix}
 $$
+
+Note: If some of you vector or matrix elements start with a minus sign you have to use `(-)` istead of `-`.
+
+
+
 
 ## TODO: Angle Axis Parameterization
 `Angl_Ax(angle,vec)`
@@ -68,6 +73,20 @@ after calling `lagfunc()`:
 - The lagrange equation of motion will be displayed on the I/O screen, but because of limited space the equations will be saved as lagr_lst in memory for better viewing on the home screen.
 
 Note: If your T or V equations start with a minus sign you have to use `(-)` istead of `-` on "the first minus"
+
+## Generalized forces from external forces
+After calling `genforce()`:
+- You are asked to enter number of generalized coordinates, for instance 2.
+- You are asked to enter number of external forces, for instance 2.
+- For every force you are asked to enter:
+  - Attack point, i.e. the position of the force, often a function of gen. coords. (g1,g2..). X,Y,Z coords must be entered as a matrix, for instance
+    `[[g1][l*sin(g2)][4]]`.
+  - The force vector, as row vector for instance: `[-Fd,0,0]` where each element corespond in X,Y,Z direction.
+- A matrix containing the gen. forces are stored in memory as `genf_mat`, where each row-sum is assoiated with each gen. coord.
+
+Note: If some of you vector or matrix elements start with a minus sign you have to use `(-)` istead of `-` on "the first minus".
+
+Note: Doesnt work for torques, but they are often a generalized force out-of-the-box anyways.
 
 ## Stability function for numeric solver from butcher tableau
 `stabil(a,b,n)` returns the stability function for a given a-matrix, b-vector and dimension n from a butcher tableau. b has to be a column vector.
