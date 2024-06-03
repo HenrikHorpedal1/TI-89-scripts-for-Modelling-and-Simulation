@@ -43,7 +43,6 @@ $$
 Only works for 3-element column-vectors.
 If invec is `[[a][b][c]]`, `skews(invec)` would return:
 
-Note: If some of you vector or matrix elements start with a minus sign you have to use `(-)` istead of `-`.
 $$
 \begin{pmatrix}
 0 & -c & b \\
@@ -51,6 +50,9 @@ c & 0 & -a \\
 -b & a & 0
 \end{pmatrix}
 $$
+
+Note: If some of you vector or matrix elements start with a minus sign you have to use `(-)` istead of `-`.
+
 
 
 
