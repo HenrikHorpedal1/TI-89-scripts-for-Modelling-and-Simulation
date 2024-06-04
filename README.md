@@ -72,7 +72,10 @@ after calling `lagfunc()`:
 
 - The lagrange equation of motion will be displayed on the I/O screen, but because of limited space the equations will be saved as lagr_lst in memory for better viewing on the home screen.
 
-Note: If your T or V equations start with a minus sign you have to use `(-)` istead of `-` on "the first minus"
+Note: If your T or V equations start with a minus sign you have to use `(-)` istead of `-` on "the first minus".
+
+Note: assumes no external forces, but can be added with `genforce()` afterwards.
+
 
 ## Constrained Lagrange equation of motion
 after calling `constlag()`
@@ -83,6 +86,10 @@ after calling `constlag()`
 - You are asked to ender V. same procedure.
 
 - The lagranginan equation of motion will be saved to `clag_lst`, but rememeber to include the constraint as well in the answer!
+
+Note: If your T, V or C equations start with a minus sign you have to use `(-)` istead of `-` on "the first minus"
+
+Note: assumes no external forces, but can be added with `genforce()` afterwards.
 
 ## Generalized forces from external forces
 After calling `genforce()`:
