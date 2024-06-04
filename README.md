@@ -74,6 +74,16 @@ after calling `lagfunc()`:
 
 Note: If your T or V equations start with a minus sign you have to use `(-)` istead of `-` on "the first minus"
 
+## Constrained Lagrange equation of motion
+after calling `constlag()`
+- You are asked to enter number of generalized coordinates, for instance 2.
+- You are asked to enter number of coordinates, for instance 1.
+- Enter the constraint(s) as a function og g1,g2...
+- You are asked to enter T. use g1, g2, g1dot, g2dot, g3....etc as you generalized coordinates and their derivative
+- You are asked to ender V. same procedure.
+
+- The lagranginan equation of motion will be saved to `clag_lst`, but rememeber to include the constraint as well in the answer!
+
 ## Generalized forces from external forces
 After calling `genforce()`:
 - You are asked to enter number of generalized coordinates, for instance 2.
