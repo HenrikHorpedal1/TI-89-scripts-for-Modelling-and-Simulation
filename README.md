@@ -53,6 +53,12 @@ $$
 
 Note: If some of you vector or matrix elements start with a minus sign you have to use `(-)` istead of `-`.
 
+
+
+
+
+
+
 ## Lagrangian equations of motion
 after calling `lagfunc()`: 
 - You are asked to enter number of generalized coordinates, for instance 2.
