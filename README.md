@@ -53,17 +53,6 @@ $$
 
 Note: If some of you vector or matrix elements start with a minus sign you have to use `(-)` istead of `-`.
 
-
-
-
-## TODO: Angle Axis Parameterization
-`Angl_Ax(angle,vec)`
-Returns Transformation matrix.
-
-## TODO: Parallel Axis theorem
-
-## TODO: state space formulation of Lagrange equations of motion.
-
 ## Lagrangian equations of motion
 after calling `lagfunc()`: 
 - You are asked to enter number of generalized coordinates, for instance 2.
@@ -81,7 +70,7 @@ Note: assumes no external forces, but can be added with `genforce()` afterwards.
 after calling `constlag()`
 - You are asked to enter number of generalized coordinates, for instance 2.
 - You are asked to enter number of coordinates, for instance 1.
-- Enter the constraint(s) as a function og g1,g2...
+- Enter the constraint(s) as a function og g1,g2...,dont include = 0
 - You are asked to enter T. use g1, g2, g1dot, g2dot, g3....etc as you generalized coordinates and their derivative
 - You are asked to ender V. same procedure.
 
@@ -107,13 +96,14 @@ Note: Doesnt work for torques, but they are often a generalized force out-of-the
 
 ## Stability function for numeric solver from butcher tableau
 `stabil(a,b,n)` returns the stability function for a given a-matrix, b-vector and dimension n from a butcher tableau. b has to be a column vector.
+Example: `stabil([[0,0][1/2,0]],[[1/2][1/2]],2)`
 
 ## Butcher tableau from Collocation points, Gauss-Legendre
 `colloc(tau_lst)`
 Input: list of collocation points,
 { $\tau_1$, $\tau_2$, $\tau_3$...}
+Example: `colloc({1/3,2/3})`
 
 Calculates a, b and c of corresponding butcher tableau and displays them.
 Note: matricies are often too wide for I/O screen, and are therefore saved to storrage under varibale names `a_col`, `b_col` and `c_col`. They can then be easily displayed on the home screen. 
 
-## TODO: Newton-Euler equations of motion
