@@ -51,13 +51,7 @@ c & 0 & -a \\
 \end{pmatrix}
 $$
 
-Note: If some of you vector or matrix elements start with a minus sign you have to use `(-)` istead of `-`.
-
-
-
-
-
-
+Note: If some of you vector or matrix elements start with a minus sign you have to use `(-)` istead of `-`.\\\
 
 ## Lagrangian equations of motion
 after calling `lagfunc()`: 
