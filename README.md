@@ -13,8 +13,6 @@ $$
 \end{pmatrix}
 $$
 
-
-
 `roty(θ)`:
 
 $$
@@ -37,7 +35,6 @@ $$
 \end{pmatrix}
 $$
 
-
 ## Skew-symmetric matrix of a vector
 `skews(invec)`
 Only works for 3-element column-vectors.
@@ -52,7 +49,7 @@ c & 0 & -a \\
 $$
 
 Note: If some of you vector or matrix elements start with a minus sign you have to use `(-)` istead of `-`.\\\
-<br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/>
 ## Lagrangian equations of motion
 after calling `lagfunc()`: 
 - You are asked to enter number of generalized coordinates, for instance 2.
@@ -106,4 +103,3 @@ Example: `colloc({1/3,2/3})`
 
 Calculates a, b and c of corresponding butcher tableau and displays them.
 Note: matricies are often too wide for I/O screen, and are therefore saved to storrage under varibale names `a_col`, `b_col` and `c_col`. They can then be easily displayed on the home screen. 
-
