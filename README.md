@@ -57,7 +57,7 @@ Note: If some of you vector or matrix elements start with a minus sign you have 
 after calling `lagfunc()`: 
 - You are asked to enter number of generalized coordinates, for instance 2.
 - You are asked to enter T. use g1, g2, g1dot, g2dot, g3....etc as you generalized coordinates and their derivative
-- You are asked to ender V. same procedure.
+- You are asked to enter V. same procedure.
 
 - The lagrange equation of motion will be displayed on the I/O screen, but because of limited space the equations will be saved as lagr_lst in memory for better viewing on the home screen.
 
